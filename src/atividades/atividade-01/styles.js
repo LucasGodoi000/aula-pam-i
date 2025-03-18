@@ -2,6 +2,9 @@ import { StyleSheet } from 'react-native';
 
 import { RFPercentage } from 'react-native-responsive-fontsize';
 
+import LinearGradient from 'react-native-linear-gradient';
+
+
 
 
 const styles = StyleSheet.create({
@@ -19,14 +22,15 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     titulo: {
-        
         fontSize: RFPercentage(4), //tamanho da fonte (uso mobile)
-        borderWidth: 3, // grossura da bordinha gostosa
+        borderWidth: 2, // grossura da bordinha gostosa
         marginTop: 20, // espaço da parte de cima
         marginBottom: 20, // espaço da parte de baixo
-        color: 'lightblue', // cor do texto
-        borderColor: 'lightblue', // cor da borda
-        borderRadius: 20, //arredondar borda
+        color: 'darkblue', // cor do texto
+        borderColor: 'darkblue', // cor da borda
+        borderRadius: 10, //arredondar borda
+        alignSelf:'center',
+        padding:'8'
 
     },
 
