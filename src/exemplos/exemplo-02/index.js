@@ -12,7 +12,16 @@ function Exemplo02 () {
             <Text style={styles.titulo}>Exemplo 2</Text>
             <Image source={img} style ={styles.imagem}/>
 
-            <Mensagem />
+            <Mensagem titulo={'Sucesso'} >
+                Valor enviado corretamente!
+            </Mensagem>
+            <Mensagem titulo={'Erro'} >
+            Erro desconhecido
+            </Mensagem>
+            <Mensagem titulo={'Alerta'} >
+                ALERTAAAAA
+            </Mensagem>
+
         </View>
     );
 }
