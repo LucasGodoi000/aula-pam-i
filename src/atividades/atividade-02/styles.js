@@ -1,53 +1,45 @@
 import { StyleSheet } from 'react-native';
-
 import { RFPercentage } from 'react-native-responsive-fontsize';
 
-import Mensagem from './card';
-
-
-
 const styles = StyleSheet.create({
-    container: { // caixa branca a frente do background
-        flex: 0.25, // container ocupa 100% da tela
+    container: { // Caixa branca que contém os produtos
+        flex: 1,
         backgroundColor: 'whitesmoke',
-        borderRadius: 3, // espessura da borda
-        // padding: 8, // espaço interno
+        alignItems: 'center',
         width: '100%',
-        height: 20,
-        verticalAlign: '30%',
-        alignItems: 'center', // alinhamento horizontal
-        textAlign:'center', //alinhamento horizontal do texto do container
-        textAlignVertical:'center', // alinhamento vertical do texto
-        color: 'white',
-        fontWeight: 'bold',
     },
-    titulo: {
-        
-        fontSize: RFPercentage(4), //tamanho da fonte (uso mobile)
-        borderWidth: 3, // grossura da bordinha gostosa
-        marginTop: 20, // espaço da parte de cima
-        marginBottom: 20, // espaço da parte de baixo
-        color: 'lightblue', // cor do texto
-        borderColor: 'lightblue', // cor da borda
-        borderRadius: 20, //arredondar borda
-
+    titulo: { // Estilo do título principal
+        fontSize: RFPercentage(5),
+        borderWidth: 3,
+        marginTop: 20,
+        marginBottom: 20,
+        color: 'blue',
+        borderColor: 'blue',
+        borderRadius: 20,
+        padding: RFPercentage(1),
     },
-
-    imagem: { 
-        //height: RFPercentage(16),
-        //width: RFPercentage(48),
-        width:'90%',
+    imagem: { // Configuração para as imagens dos teclados
+        height: RFPercentage(19),
+        width: RFPercentage(49),
         resizeMode: 'contain',
-
     },
-
-
-    Mensagem: {
-
+    valor: { // Estilo do preço dentro do container
+        backgroundColor: 'lightblue',
+        padding: RFPercentage(1.5),
+        borderRadius: RFPercentage(1),
+        borderWidth: RFPercentage(0.2),
+        borderColor: 'white',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: RFPercentage(1),
+        width: '60%',
     },
-    
-    
+    valorTexto: { // Estilo do texto do preço
+        fontSize: RFPercentage(2.5),
+        fontWeight: 'bold',
+        color: 'darkblue',
+        textAlign: 'center',
+    },
 });
-
 
 export default styles;
