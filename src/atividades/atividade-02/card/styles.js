@@ -27,15 +27,14 @@ const styles = StyleSheet.create({
         borderRadius: RFPercentage(1), // Bordas arredondadas
         borderWidth: RFPercentage(0.2), // Borda fina
         borderColor: 'white', // Cor da borda para contraste
-        alignItems: 'stretch', // Centraliza o conteúdo
-        justifyContent: 'flex-end',
-        marginTop: RFPercentage(0.12), // Espaço superior
-        width: '60%', // Define a largura
+        alignItems: 'center', // Centraliza o conteúdo
+        marginTop: RFPercentage(0.14), // Espaço superior
+        width: '1000%', // Define a largura
     },
     valorTexto: {
         fontSize: RFPercentage(2.5), // Tamanho maior da fonte
         fontWeight: 'bold', // Deixa o texto mais visível
-        color: 'darkblue', // Azul escuro para contraste
+        color: 'darkyellow', // Azul escuro para contraste
         textAlign: 'center',
     },
 });

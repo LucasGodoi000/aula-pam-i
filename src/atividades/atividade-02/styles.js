@@ -1,6 +1,8 @@
 import { StyleSheet } from 'react-native';
 import { RFPercentage } from 'react-native-responsive-fontsize';
 
+
+
 const styles = StyleSheet.create({
     container: { // Caixa branca que contém os produtos
         flex: 1,
@@ -19,25 +21,29 @@ const styles = StyleSheet.create({
         padding: RFPercentage(1),
     },
     imagem: { // Configuração para as imagens dos teclados
-        height: RFPercentage(19),
+        height: RFPercentage(15),
         width: RFPercentage(49),
         resizeMode: 'contain',
-    },
-    valor: { // Estilo do preço dentro do container
-        backgroundColor: 'lightblue',
-        padding: RFPercentage(1.5),
-        borderRadius: RFPercentage(1),
+        borderRadius: RFPercentage(10),
         borderWidth: RFPercentage(0.2),
-        borderColor: 'white',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: RFPercentage(1),
-        width: '60%',
+
+        backgroundColor: 'lightblue',
+    },
+    valor: {
+        backgroundColor: 'lightblue', // Fundo azul claro para destacar
+        padding: RFPercentage(1.5), // Espaçamento interno
+        borderRadius: RFPercentage(1), // Bordas arredondadas
+        borderWidth: RFPercentage(0.2), // Borda fina
+        borderColor: 'black', // Cor da borda para contraste
+        alignItems: 'center', // Estica para caber dentro do container
+        justifyContent: 'flex-end', // Garantir que o valor esteja posicionado ao final
+        marginTop: RFPercentage(0.14), // Espaço superior
+        width: '1%', // Ajuste para que ocupe toda a largura disponível dentro do container
     },
     valorTexto: { // Estilo do texto do preço
         fontSize: RFPercentage(2.5),
         fontWeight: 'bold',
-        color: 'darkblue',
+        color: 'yellow',
         textAlign: 'center',
     },
 });
