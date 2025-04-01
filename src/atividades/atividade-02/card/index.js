@@ -2,7 +2,7 @@ import { View, Text } from 'react-native';
 import styles from './styles';
 
 // Componente Mensagem: Exibe um título e um texto dentro de um card
-function Mensagem({ titulo, children }) {
+function Mensagem ({ titulo, children }) {
     return (
         <View style={styles.container}>
             <Text style={styles.titulo}>{titulo}</Text>

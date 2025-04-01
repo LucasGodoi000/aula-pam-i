@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 import { RFPercentage } from 'react-native-responsive-fontsize';
 
 const styles = StyleSheet.create({
-    container: {
+    container: { // CONTAINER 
         flex: 3,
         borderWidth: RFPercentage(0.3),
         padding: RFPercentage(2),
@@ -17,11 +17,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'blue',
     },
-    mensagem: {
-        fontSize: RFPercentage(1.69),
-        color: 'whiteblue',
-    },
-    valor: {
+
+    valor: {    // RETANGULO VALORES //
         backgroundColor: 'lightblue', // Fundo azul claro para destacar
         padding: RFPercentage(1.5), // Espaçamento interno
         borderRadius: RFPercentage(1), // Bordas arredondadas
@@ -34,7 +31,7 @@ const styles = StyleSheet.create({
     valorTexto: {
         fontSize: RFPercentage(2.5), // Tamanho maior da fonte
         fontWeight: 'bold', // Deixa o texto mais visível
-        color: 'darkyellow', // Azul escuro para contraste
+        color: 'black', // Azul escuro para contraste
         textAlign: 'center',
     },
 });
