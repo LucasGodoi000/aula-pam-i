@@ -4,6 +4,7 @@ import styles from './styles';
 import img1 from '../../../assets/teclado 1.png';
 import img2 from '../../../assets/teclado 2.jpg';
 import img3 from '../../../assets/teclado 3.png';
+import im4 from '../../../assets/teclado 4.png';
 
 import { Mensagem, Valor } from './card'; // Agora importado corretamente
 
@@ -28,6 +29,11 @@ function LojaTeclado() {
             <Mensagem titulo={'Teclado Mecânico KG801'}>
                 <Image source={img3} style={styles.imagem} />
                 <Valor valor={'R$ 119,49'} />
+            </Mensagem>
+            {/* Produto 4 */}
+            <Mensagem titulo={'Teclado Mecânico PINKLADY'}>
+                <Image source={img4} style={styles.imagem} />
+                <Valor valor={'R$ 249,99'} />
             </Mensagem>
         </View>
     );

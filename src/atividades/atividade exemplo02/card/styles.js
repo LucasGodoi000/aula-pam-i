@@ -21,6 +21,12 @@ const styles = StyleSheet.create({
     }, 
     valor: {
         color: 'black',
+        backgroundColor: '#32D957',
+        borderRadius: RFPercentage(1),
+        height: RFPercentage(3.5),
+        width: RFPercentage(14),
+
+
     }, 
     descricao: {
         fontSize: RFPercentage(1.6), 
