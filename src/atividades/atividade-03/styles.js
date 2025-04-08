@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
         textAlignVertical:'center', // alinhamento vertical do texto
         color: 'white',
         fontWeight: 'bold',
+        
     },
     titulo: {
         
@@ -46,9 +47,34 @@ const styles = StyleSheet.create({
         color: 'lightblue',
         fontSize: RFPercentage(4),
     },
-    botao: {
+
+    containerIncrementos: {
+        flexDirection:'row',
+    },
+    botaoIncrementa: {
         backgroundColor: 'lightblue',
-        width: '75%',
+        width: '35%',
+        borderRadius: RFPercentage(2),
+        padding: RFPercentage(1.5),
+        alignItems: 'center',
+        justifyContent: 'center',
+        margin: RFPercentage(2),
+    
+
+    },
+    botaoDiscrementa: {
+        backgroundColor: 'lightblue',
+        width: '35%',
+        borderRadius: RFPercentage(2),
+        padding: RFPercentage(1.5),
+        alignItems: 'center',
+        justifyContent: 'center',
+        margin: RFPercentage(2),
+
+    },
+    botaoReset: {
+        backgroundColor: 'lightblue',
+        width: '85%',
         borderRadius: RFPercentage(2),
         padding: RFPercentage(1.5),
         alignItems: 'center',

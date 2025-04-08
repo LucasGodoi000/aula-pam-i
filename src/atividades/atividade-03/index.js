@@ -4,7 +4,7 @@ import { View, Text, Button, Alert, TouchableOpacity, } from 'react-native';
 
 import styles from './styles';
 
-function Exemplo03 () {
+function Atividade03 () {
 
     const [numero, setNumero] = useState(0);
 
@@ -12,6 +12,13 @@ function Exemplo03 () {
         setNumero(numero + 1);
     }
 
+    function handleDiscrementa() {
+        setNumero(numero - 1);
+    }
+
+    function handleReset() {
+        setNumero(0);
+    }
     
     
     function handleExibeBotao () { // FAZER O APP NÃO APERTAR O BOTAO
@@ -51,28 +58,40 @@ function Exemplo03 () {
             <Text style={styles.titulo}>Exemplo 3</Text>
             <Text style={styles.texto}>Variaveis e State</Text>
 
-                <View style={styles.botaoAlert}>
-            <Button
-            title='Alerta'
-            color={'green'}
-            onPress={handleExibeBotao2}
-            />
-                </View>
 
                 <Text style={styles.valor}>{numero}</Text>
 
-                <TouchableOpacity style={styles.botao} onPress={handleIncrementa}>
+
+                <View style={styles.containerIncrementos}>
+
+
+     
+
+                <TouchableOpacity style={styles.botaoIncrementa} onPress={handleIncrementa}>
                     <Text style={styles.txtBotao}>+1</Text>
 
                 </TouchableOpacity>
 
+                <TouchableOpacity style={styles.botaoDiscrementa} onPress={handleDiscrementa}>
+                    <Text style={styles.txtBotao}>-1</Text>
+
+                </TouchableOpacity>
+
+
+
+                </View>
+                
+                <TouchableOpacity style={styles.botaoReset} onPress={handleReset}>
+                    <Text style={styles.txtBotao}>Zerar</Text>
+
+                </TouchableOpacity>
 
 
         </View>
     );
 }
 
-export default Exemplo03;
+export default Atividade03;
 
 
 // layout de uma tela
