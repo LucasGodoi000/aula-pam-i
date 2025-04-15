@@ -64,6 +64,10 @@ function Atividade03 () {
 
                 <View style={styles.containerIncrementos}>
 
+                <TouchableOpacity style={styles.botaoDiscrementa} onPress={handleDiscrementa}>
+                    <Text style={styles.txtBotao}>-1</Text>
+
+                </TouchableOpacity>
 
      
 
@@ -72,10 +76,6 @@ function Atividade03 () {
 
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.botaoDiscrementa} onPress={handleDiscrementa}>
-                    <Text style={styles.txtBotao}>-1</Text>
-
-                </TouchableOpacity>
 
 
 
