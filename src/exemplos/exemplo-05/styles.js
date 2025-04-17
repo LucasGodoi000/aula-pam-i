@@ -1,4 +1,4 @@
-import { StyleSheet, TextInput } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import { RFPercentage } from 'react-native-responsive-fontsize';
 
@@ -20,57 +20,52 @@ const styles = StyleSheet.create({
     },
     titulo: {
         
-        fontSize: RFPercentage(5), //tamanho da fonte (uso mobile)
+        fontSize: RFPercentage(4), //tamanho da fonte (uso mobile)
         borderWidth: 3, // grossura da bordinha gostosa
         marginTop: 20, // espaço da parte de cima
-        marginBottom: 50, // espaço da parte de baixo
+        marginBottom: 20, // espaço da parte de baixo
         color: 'lightblue', // cor do texto
         borderColor: 'lightblue', // cor da borda
         borderRadius: 20, //arredondar borda
-        textAlign: 'auto',
-        padding: 2,
-
 
     },
 
     texto: {
-        fontSize: RFPercentage(4),
-    },
-
-    txtInput: {
-        borderWidth: RFPercentage(0.4),
-        borderColor: 'black',
-        color: 'blue',
         fontSize: RFPercentage(2.2),
-        width: '90%',
-        borderRadius: RFPercentage(2),
-        marginVertical: RFPercentage(1.5)
-        
     },
-
-    botao: {
-        backgroundColor: 'lightblue',
-        width: '75%',
-        borderRadius: RFPercentage(2),
-        padding: RFPercentage(1.5),
-        alignItems: 'center',
+    txtSaida : {
+        margin: 6,
+        fontSize: 22,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        color: '#E91E63'
+    },
+    txtEntrada: {
+        borderWidth: 4,
+        textAlign: 'center',
+        fontSize: 22,
+        borderColor: '#E91E63',
+        height: 40,
+        color: '#E53935',
+        borderRadius: 10,
+        marginTop: 10,
+    },
+    button: {
+        backgroundColor: '#E91E63',
+        height: 40,
         justifyContent: 'center',
-        margin: RFPercentage(2),
-
+        borderRadius: 10,
+        marginTop: 20,
     },
-    txtBotao: {
-        fontSize: RFPercentage(2),
-        color: '#fafafa',
-
+    textButton: {
+        fontSize: 22,
+        color: '#FF80AB',
+        textAlign: 'center'
     },
-
-    nome :{
-        paddingHorizontal: RFPercentage(1),
-        fontSize: RFPercentage(2),
-        marginBottom: RFPercentage(1),
-        alignSelf:'baseline',
-        
-        
+    textLabel: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        color: '#C51162',
     },
 });
 
