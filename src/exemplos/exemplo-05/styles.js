@@ -38,35 +38,57 @@ const styles = StyleSheet.create({
         fontSize: 22,
         fontWeight: 'bold',
         textAlign: 'center',
-        color: '#E91E63'
+        color: '#E91E63',
+  
     },
-    txtEntrada: {
-        borderWidth: 4,
+    txtEntrada: { // input
+        borderWidth: 2,
         textAlign: 'center',
-        fontSize: 22,
+        fontSize: 15,
         borderColor: '#E91E63',
         height: 40,
+        width: RFPercentage(20),
         color: '#E53935',
-        borderRadius: 10,
+        borderRadius: 5,
         marginTop: 10,
     },
-    button: {
+    button: { // botões de ações (+ - / *)
         backgroundColor: '#E91E63',
-        height: 40,
+        height: RFPercentage(5),
         justifyContent: 'center',
+        alignItems: 'center',
         borderRadius: 10,
         marginTop: 20,
+        margin: RFPercentage(0.5),
     },
     textButton: {
         fontSize: 22,
-        color: '#FF80AB',
-        textAlign: 'center'
+        color: '#FFFFFF',
+        textAlign: 'center',
+        width: RFPercentage(10)
+
     },
     textLabel: {
         fontSize: 16,
         fontWeight: 'bold',
         color: '#C51162',
     },
+    botoes: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+
+    },
+    zerarBotao: {
+        backgroundColor: '#E91E63',
+        height: RFPercentage(5),
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 10,
+        marginTop: 20,
+        margin: RFPercentage(0.7),
+        width: RFPercentage(40)
+    }
 });
 
 
