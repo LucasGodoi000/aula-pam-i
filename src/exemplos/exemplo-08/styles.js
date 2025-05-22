@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
     lista: { 
         marginTop: RFValue(10), 
         width: '100%', 
+        
     },
 });
 

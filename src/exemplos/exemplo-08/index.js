@@ -32,6 +32,7 @@ export default function Exemplo8() {
                 return [{ id: uuid.v4(), text }, ...prevItems];
             });
         }
+        
     }
 
     return (
